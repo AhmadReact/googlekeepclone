@@ -1,0 +1,209 @@
+*{
+
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+
+}
+
+.white{
+  color:white;
+  margin-left: 5px;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+
+
+
+.App{
+
+  display:flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header{
+ 
+background-color: rgb(253, 183, 20);
+width: 100%;
+height: 20px;
+display: flex;
+
+align-items: center;
+
+}
+
+.header img{
+ 
+  height: 15px;
+  width: 15px;
+  margin-left: 15px;
+}
+
+
+.header h5{
+
+  display: inline;
+  margin-bottom: 2px;
+ margin-left: 2px;
+  color:rgb(253, 253, 253);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+}
+
+
+
+
+
+.container1{
+
+position: relative;
+
+width: 100%;
+min-height: 80px;
+}
+
+.main_note{
+position: absolute;
+max-width: 30%;
+left:50%;
+transform: translateX(-50%);
+margin-top:10px;
+box-shadow: 2px 2px 5px rgba(100, 94, 94, 0.425);
+border-radius: 5px;
+}
+
+
+
+form{
+
+display: flex;
+flex-direction: column;
+position:relative;
+
+}
+
+
+form input{
+
+border:none;
+background:transparent;
+padding-left: 5px;
+padding-top:5px;
+outline:none;
+font-size:8px;
+}
+
+ 
+form input::placeholder{
+letter-spacing: 1px;
+ }
+  
+form textarea{
+
+  background:transparent;
+  border:none;
+  outline:none;
+  margin-top:10px;
+  padding-left: 5px;
+  font-size: 8px;
+  resize: none;
+}
+
+form button{
+
+  width: 15px;
+  height: 15px;
+  font-size: 10px;
+  font-weight: bold;
+position:absolute;
+bottom:-5px;
+right: 0;
+background:#fff;
+border-radius: 50%;
+border:none;
+color:rgb(253, 183, 20);
+box-shadow: 2px 3px 5px rgba(100, 94, 94, 0.425);
+transition:all 0.5s ease;
+}
+
+form button:hover{
+
+background-color:rgb(253, 183, 20) ;
+color:#fff;
+
+}
+
+.note{
+
+ 
+max-width: 30%;
+
+
+box-shadow: 2px 2px 5px rgba(100, 94, 94, 0.425);
+border-radius: 5px;
+margin:8px 8px;
+}
+
+.container2{
+  padding:15px 10px;
+
+  height: auto;
+display: flex;
+flex-wrap: wrap;
+
+
+}
+
+.noteinput{
+
+  font-size:5px;
+  font-weight: bold;
+}
+
+.notetextarea{
+
+  font-size:5px;
+  margin-top:2px;
+}
+
+
+footer{
+
+  height: 100%;
+  position: relative;
+   bottom: 2px;
+   width: 100%;
+   min-height: 20px;
+   font-size: 5px;
+   text-align: center;
+   margin-top:10px;
+ }
+ 
+ footer p{
+   
+   position: absolute;
+   bottom: 0;
+ 
+ left: 50%;
+ transform:translateX(-50%);
+ bottom:2px;
+ }
+ 
